@@ -1,5 +1,8 @@
 
 public class Creator
 	{
-//ddddk
+		public static void main(String[] args)
+		{
+			
+		}
 	}
