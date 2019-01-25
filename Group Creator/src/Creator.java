@@ -28,6 +28,8 @@ public class Creator
 						Scanner options = new Scanner (System.in);
 						System.out.println("How many groups would you like?");
 						int group = options.nextInt();
+						
+						restart = false;
 					}
 				
 			}
