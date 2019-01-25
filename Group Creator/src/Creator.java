@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Creator
 	{
@@ -14,7 +15,7 @@ public class Creator
 
 		private static void studentNames()
 			{
-			
+				
 				
 			}
 
@@ -26,6 +27,7 @@ public class Creator
 					{
 						Scanner options = new Scanner (System.in);
 						System.out.println("How many groups would you like?");
+						int group = options.nextInt();
 					}
 				
 			}
