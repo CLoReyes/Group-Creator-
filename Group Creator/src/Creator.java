@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
@@ -13,15 +15,21 @@ public class Creator
 			//collections/shuffle(myArray)
 		}
 
-		private static void studentNames() throws FileNotFoundException
+		public static void studentNames() throws FileNotFoundException
 			{
 				File names = new File("Random22Names.txt");
 				Scanner scannerWithNames = new Scanner(names);
-		
+				List<String> estudiantes = new ArrayList<String>();
+				while (names.hasNextLine())
+					{
+						estudiantes.add(names.nextLine());
+					}
+				
+				String[] students = estudiantes.toArray(new String[0]);
 			}
 
 
-		private static void groupGenerator()
+		public static void groupGenerator()
 			{
 				boolean regen = true;
 				while (regen)
@@ -30,7 +38,7 @@ public class Creator
 						System.out.println("How many groups would you like?");
 						int group = options.nextInt();
 						
-						
+						System.out.println(students);
 						
 						Scanner options2 = new Scanner (System.in);
 						System.out.println("Would you like to generate another group?");
