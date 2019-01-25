@@ -13,10 +13,11 @@ public class Creator
 			//collections/shuffle(myArray)
 		}
 
-		private static void studentNames()
+		private static void studentNames() throws FileNotFoundException
 			{
-				
-				
+				File names = new File("Random22Names.txt");
+				Scanner scannerWithNames = new Scanner(names);
+		
 			}
 
 
