@@ -30,7 +30,17 @@ public class Creator
 						System.out.println("How many groups would you like?");
 						int group = options.nextInt();
 						
-						restart = false;
+						System.out.println("Would you like to generate another group?");
+						String answer = options.nextLine();
+						if (answer.equals("Yes"))
+							{
+								restart = true;
+							}
+						else
+							{
+								restart = false;
+							}
+						
 					}
 				
 			}
