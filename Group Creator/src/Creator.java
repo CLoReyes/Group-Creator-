@@ -23,22 +23,26 @@ public class Creator
 
 		private static void groupGenerator()
 			{
-				boolean restart = true;
-				while (restart)
+				boolean regen = true;
+				while (regen)
 					{
 						Scanner options = new Scanner (System.in);
 						System.out.println("How many groups would you like?");
 						int group = options.nextInt();
 						
+						
+						
+						Scanner options2 = new Scanner (System.in);
 						System.out.println("Would you like to generate another group?");
-						String answer = options.nextLine();
+						String answer = options2.nextLine();
 						if (answer.equals("Yes"))
 							{
-								restart = true;
+								regen = true;
 							}
 						else
 							{
-								restart = false;
+								regen = false;
+								System.out.println(":thumbs_up:");
 							}
 						
 					}
