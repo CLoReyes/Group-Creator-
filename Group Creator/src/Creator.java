@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
+import java.util.*;
 
 import java.io.IOException;
 import java.io.File;
@@ -32,6 +32,7 @@ public class Creator
 					studes.add(student);
 				}
 			Collections.shuffle(studes);
+			
 			
 				
 //				Scanner fileInput = new Scanner (new File("Random22Names.txt"));
