@@ -1,8 +1,7 @@
+import java.util.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import java.util.*;
 
 import java.io.IOException;
 import java.io.File;
@@ -15,9 +14,8 @@ public class Creator
 		public static void main(String[] args) throws IOException
 		{
 			studentNames();
-	
 			groupGenerator();
-			//collections/shuffle(myArray)
+
 		
 			
 		
